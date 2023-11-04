@@ -53,6 +53,8 @@ const Mens = () => {
             className='categorymens' style={{marginTop:"30px"}}>
              <Box>
                  <Text fontWeight={"bold"} fontSize="4xl">CATEGORIES</Text>
+         <Link to={"/mensproducts"}>
+
                <Grid w={"97%"} gridTemplateColumns={{base:"repeat(1,1fr)", md:"repeat(2,1fr)" , lg:"repeat(3,1fr)"}} gap="30px" margin={"auto"} marginTop={10}>
                   <motion.Box
                   whileHover={{ scale: 1.02 }}
@@ -80,6 +82,7 @@ const Mens = () => {
                   src={menscat3} alt="collection1"/>
                   </motion.Box>
                </Grid>
+               </Link>
 
              </Box>
 
@@ -88,9 +91,11 @@ const Mens = () => {
 
 
          <div className='mensCards' style={{marginTop:"30px"}}>
+         <Link to={"/mensproducts"}>
            <Grid gridTemplateColumns={{base:"repeat(2,1fr)", md:"repeat(3,1fr)" , lg:"repeat(4,1fr)"}} width="97%" margin={"auto"} gap={10}>
 
-            <Link to={"/mensproducts"}><Image src={mmenscard1} alt="mendscard" /></Link>
+            <Image src={mmenscard1} alt="mendscard" />
+            
             <Image src={mmenscard2}  alt="mendscard"/>
             <Image src={mmenscard3} alt="mendscard"/>
             <Image src={mmenscard4} alt="mendscard"/>
@@ -105,12 +110,13 @@ const Mens = () => {
             
 
            </Grid>
+           </Link>
 
          </div>
 
          <div className='OFFICIAL MERCHANDISE' style={{marginTop:"30px"}}>
          <Text fontWeight={"bold"} fontSize="4xl">OFFICIAL MERCHANDISE</Text>
-             
+         <Link to={"/mensproducts"}>
              <Grid gridTemplateColumns={{base:"repeat(2,1fr)", md:"repeat(3,1fr)" , lg:"repeat(5,1fr)"}} gap={30} width="92%" margin="auto" marginTop={5}>
                  <motion.Box
                    whileHover={{ scale: 1.01 }}
@@ -143,6 +149,7 @@ const Mens = () => {
                  ><Image src='https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/DC_Logo_268x220_qtYfouo_VyuqmVD.jpg?format=webp&w=300&dpr=1.3' alt='marvel'/></motion.Box>
 
              </Grid>
+             </Link>
 
          </div>
                <div className='topselling' style={{marginTop:"30px"}}>

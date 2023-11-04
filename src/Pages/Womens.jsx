@@ -43,14 +43,15 @@ const Womens = () => {
             className='categorymens' style={{marginTop:"30px"}}>
              <Box>
                  <Text fontWeight={"bold"} fontSize="4xl">CATEGORIES</Text>
+                 <Link to={"/womensproducts"}>
                <Grid w={"97%"}  gridTemplateColumns={{base:"repeat(1,1fr)", md:"repeat(2,1fr)" , lg:"repeat(3,1fr)"}} gap="30px" margin={"auto"}>
                   <motion.Box
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 400, damping: 50 }}
                   >
-                  <Link to={"/womensproducts"}><Image 
-                  src={womenscat1} alt="collection1"/></Link>
+                  <Image 
+                  src={womenscat1} alt="collection1"/>
                   </motion.Box>
                   
                   <motion.Box
@@ -70,6 +71,7 @@ const Womens = () => {
                   src={womenscat3} alt="collection1"/>
                   </motion.Box>
                </Grid>
+               </Link>
 
              </Box>
 
@@ -78,6 +80,8 @@ const Womens = () => {
 
 
          <div className='mensCards' style={{marginTop:"30px"}}>
+         <Link to={"/womensproducts"}>
+
            <Grid gridTemplateColumns={{base:"repeat(2,1fr)", md:"repeat(3,1fr)" , lg:"repeat(4,1fr)"}} width="97%" margin={"auto"} gap={10}>
 
             <Image src={womenscard1} alt="mendscard" />
@@ -95,11 +99,13 @@ const Womens = () => {
             
 
            </Grid>
+           </Link>
 
          </div>
 
          <div className='OFFICIAL MERCHANDISE' style={{marginTop:"30px"}}>
          <Text fontWeight={"bold"} fontSize="4xl">OFFICIAL MERCHANDISE</Text>
+         <Link to={"/womensproducts"}>
              
              <Grid  gridTemplateColumns={{base:"repeat(2,1fr)", md:"repeat(3,1fr)" , lg:"repeat(5,1fr)"}} gap={30} width="92%" margin="auto" marginTop={5}>
                  <motion.Box
@@ -133,16 +139,20 @@ const Womens = () => {
                  ><Image src='https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/DC_Logo_268x220_qtYfouo_VyuqmVD.jpg?format=webp&w=300&dpr=1.3' alt='marvel'/></motion.Box>
 
              </Grid>
+             </Link>
 
          </div>
                <div className='topselling' style={{marginTop:"30px"}}>
                <Text fontWeight={"bold"} fontSize="4xl">TOP SELLING</Text>
+         <Link to={"/womensproducts"}>
+
                  <Grid gridTemplateColumns={{base:"repeat(2,1fr)", md:"repeat(2,1fr)" , lg:"repeat(4,1fr)"}} gap={30} w={"95%"} margin="auto" marginTop={7}>
                   <Image src={womenstopsell1} alt="topsell1"/>
                   <Image src={womenstopsell2} alt="topsell"/>
                   <Image src={womenstopsell3} alt="topsell"/>
                   <Image src={womenstopsell4} alt="topsell"/>
                  </Grid>
+                 </Link>
                </div>
 
 

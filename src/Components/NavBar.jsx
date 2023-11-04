@@ -34,7 +34,9 @@ import { useContext } from 'react';
 import { AuthContext } from '../ContextApi/AuthContextProvider';
 export default function WithSubnavigation() {
   const { isOpen, onToggle } = useDisclosure();
- const {setquery , user,isauth ,arr ,setisauth} = useContext(AuthContext)
+ const {setquery ,isauth ,arr ,setisauth} = useContext(AuthContext)
+
+//  console.log(arr)
   return (
     <Box >
       <Flex
@@ -101,7 +103,7 @@ export default function WithSubnavigation() {
             to={'/login'}
              alignItems="center"
             >
-          { isauth ?<Button _hover={{bg:"white"}} backgroundColor={"white"} onClick={() => setisauth(!isauth) } color={"red"} marginLeft={2} fontWeight="bold" isD>vivek</Button> : <FaRegUser/> }
+          { isauth ?<Button _hover={{bg:"white"}} backgroundColor={"white"} onClick={() => setisauth(!isauth) } color={"red"} marginLeft={2} fontWeight="bold">logout</Button> : <FaRegUser/> }
           
           </Button>
         </Link>
